@@ -2,8 +2,8 @@
 FROM dclong/jupyterhub-cuda
 # GIT: https://github.com/legendu-net/docker-jupyterhub-cuda.git
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
+RUN apt-get -y update \
+    && apt-get -y install --no-install-recommends \
         cuda-libraries-11-1=11.1.1-1 \
         libnpp-11-1=11.1.2.301-1 \
         cuda-nvtx-11-1=11.1.74-1 \
